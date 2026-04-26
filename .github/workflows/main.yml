@@ -7,7 +7,7 @@ jobs:
 build:
 runs-on: ubuntu-latest
 
-```
+```yaml
 steps:
 - name: Checkout repository
   uses: actions/checkout@v4
