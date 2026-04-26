@@ -66,16 +66,16 @@ echo ""
 # ─── List available disks (no lsblk needed) ───────────────
 printf "${YELLOW}Available disks:${NC}\n"
 echo "─────────────────────────────────────────────────────"
+# Manually check disks right now
 for dev in /sys/block/*/; do
   name=$(basename "$dev")
-  # Skip loop, ram, zram devices
   case "$name" in
     loop*|ram*|zram*) continue ;;
   esac
   size_bytes=$(cat "/sys/block/${name}/size" 2>/dev/null || echo 0)
   size_gb=$(awk "BEGIN {printf \"%.1f GB\", $size_bytes * 512 / 1024 / 1024 / 1024}")
   model=$(cat "/sys/block/${name}/device/model" 2>/dev/null | xargs || echo "Unknown")
-  printf "  %-10s %-10s %s\n" "$name" "$size_gb" "$model"
+  printf "%-10s %-10s %s\n" "$name" "$size_gb" "$model"
 done
 echo "─────────────────────────────────────────────────────"
 echo ""
