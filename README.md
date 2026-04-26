@@ -30,6 +30,9 @@
 | Internal Storage | mSATA / SSD (shown as `sda`) |
 | LAN Port | **Port 5** eth0 |
 | WAN Port | **Port 6** eth1 |
+|    change it via luci or shell command |
+| LAN Port | **Port 1** eth5 |
+| WAN Port | **Port 2** eth6 |
 
 ---
 
