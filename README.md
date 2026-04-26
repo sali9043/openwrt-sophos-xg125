@@ -32,7 +32,8 @@
 |    change it via luci or shell command |
 | LAN Port | **Port 1** eth5 |
 | WAN Port | **Port 2** eth6 |
-
+![OpenWrt Screenshot](https://raw.githubusercontent.com/sali9043/openwrt-sophos-xg125/main/Screenshot%202026-04-26%20224822.png)
+![OpenWrt Screenshot](https://raw.githubusercontent.com/sali9043/openwrt-sophos-xg125/main/Screenshot%202026-04-26%20224838.png)
 ---
 
 ## What You Need
