@@ -28,8 +28,8 @@
 | Serial Port | DB9 / RJ45 console port |
 | Baud Rate | 115200 |
 | Internal Storage | mSATA / SSD (shown as `sda`) |
-| LAN Port | **Port 5** |
-| WAN Port | **Port 6** |
+| LAN Port | **Port 5** eth0 |
+| WAN Port | **Port 6** eth1 |
 
 ---
 
