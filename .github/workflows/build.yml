@@ -1,0 +1,28 @@
+name: Build OpenWrt Sophos XG125
+
+on:
+workflow_dispatch:
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+```
+steps:
+- name: Checkout
+  uses: actions/checkout@v4
+
+- name: Install dependencies
+  run: |
+    sudo apt update
+    sudo apt install -y build-essential wget unzip zstd
+
+- name: Download OpenWrt Image Builder
+  run: |
+    wget https://downloads.openwrt.org/releases/25.12.2/targets/x86/64/openwrt-imagebuilder-25.12.2-x86-64.Linux-x86_64.tar.zst
+    tar --use-compress-program=unzstd -xvf openwrt-imagebuilder-25.12.2-x86-64.Linux-x86_64.tar.zst
+
+- name: Build firmware
+  run: |
+    cd
+```
