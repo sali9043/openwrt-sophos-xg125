@@ -1,7 +1,8 @@
 # OpenWrt x86/64 — Sophos XG125 Rev 3.0
 
 > Custom OpenWrt 25.12.2 firmware for the Sophos XG125 Rev 3.0 appliance with LuCI web interface, WireGuard, and OpenVPN support.
-
+https://github.com/sali9043/openwrt-sophos-xg125/blob/main/Screenshot%202026-04-26%20224838.png
+> 
 ---
 
 ## 📋 Table of Contents
